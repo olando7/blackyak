@@ -38,13 +38,14 @@
    <script src="js/all.min.js"></script>
    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
    <script src="js/main.js"></script>
 </head>
 <body>
    <header>
       <ul class="header_nav">
          <li class="hamburger">
-            <div>
+            <div class="open">
                <span></span>
                <span></span>
                <span></span>
@@ -60,10 +61,12 @@
             <a href="" class="cart_btn"><i class="fas fa-shopping-cart"></i><span>0</span></a>
          </li>
       </ul>
-      <form action="" method="GET">
-         <input type="text">
-         <button type="submit"><i class="fas fa-search"></i></button>
-      </form>
+      <div class="main_search_modal">
+         <form action="#" method="GET">
+            <input type="text">
+            <button type="submit"><i class="fas fa-search"></i></button>
+         </form>
+      </div>
    </header>
    <aside>
       <div class="inner"></div>
@@ -141,12 +144,12 @@
    </aside>
    <main>
       <div class="banner">
-         <ul>
-            <li><a href="">light down</a></li>
-            <li><a href="">brand new now</a></li>
-            <li><a href="">what is your yakice</a></li>
-            <li><a href="">yaktrip</a></li>
-            <li><a href="">yak tights</a></li>
+         <ul class="banner_slider">
+            <li><a href="" class="banner_01">light down</a></li>
+            <li><a href="" class="banner_02">brand new now</a></li>
+            <li><a href="" class="banner_03">what is your yakice</a></li>
+            <li><a href="" class="banner_04">yaktrip</a></li>
+            <li><a href="" class="banner_05">yak tights</a></li>
          </ul>
       </div> <!-- banner -->
       <section class="best">
