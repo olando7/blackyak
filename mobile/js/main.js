@@ -1,6 +1,6 @@
 $( function(){
    
-   $( "#sidemeun_accodion" ).accordion({
+   $( "#sidemenu_accodion" ).accordion({
       heightStyle: "content"
    }); //sidemenu
  
