@@ -35,6 +35,9 @@ section h2::before{
    background: #0d0d0d;
    height: 60px;
    line-height: 60px;
+   position: fixed;
+   z-index: 200;
+   top: 0; right: 0; left: 0;
 }
 .header_nav a{
    color:#fff;
@@ -42,6 +45,7 @@ section h2::before{
 .hamburger{
    flex:1;
    position: relative;
+   cursor: pointer;
 }
 .hamburger div{
    position: absolute;
@@ -54,9 +58,25 @@ section h2::before{
    display: block;
    background: #fff;
    margin-bottom: 10px;
+   transform-origin: 50% 50%;
 }
 .hamburger span:last-of-type{
    margin-bottom: 0;
+}
+.hamburger.active div{
+   left: 15px;
+}
+.hamburger.active span{
+   position: absolute;
+}
+.hamburger.active span:first-child{
+   transform: rotate(-45deg);
+}
+.hamburger.active span:last-child{
+   transform: rotate(45deg);
+}
+.hamburger.active span:nth-child(2){
+   display: none;
 }
 .logo{
    flex: 5;
@@ -86,7 +106,90 @@ section h2::before{
    border-radius: 50%;
 }
 /* ------------------------ ASIDE -------------------------- */
-
+aside{
+   position: fixed;
+   top: 60px; bottom: 0; right: 0; left: 0;
+   visibility: hidden;
+}
+aside.active{
+   visibility: visible;
+}
+aside .inner{
+   position: absolute;
+   top: 0; right: 0; bottom: 0; left: 0;
+   background: rgba(255,255,255,0.8);
+   opacity: 0;
+   transition: 0.5s;
+}
+aside .sidemenu{
+   position: absolute;
+   top: 0; left: -100%; bottom: 0;
+   width: 90%;
+   background: #0d0d0d;
+   transition: 0.5s;
+}
+aside.active .inner{
+   opacity: 1;
+}
+aside.active .sidemenu{
+   left: 0;
+}
+.sidemenu .top{
+   border-bottom:1px solid #6F6F6F;
+}
+.sidemenu .top ul{
+   display: flex;
+   justify-content: space-between;
+}
+.sidemenu .top ul li{
+   flex:1;
+   text-align: center;
+   height: 40px;
+   line-height: 40px;
+}
+.sidemenu .top a{
+   display: block;
+   color:#fff;
+   font-size:14px;
+   font-weight: 500;
+}
+.sidemenu .content{
+   text-transform: uppercase;
+   padding: 20px 30px;
+}
+.sidemenu .content h2{
+   color:#ff0000;
+   font-size: 20px;
+   font-weight: 700;
+   font-family: 'Montserrat', sans-serif;
+   cursor: pointer;
+   outline: none;
+}
+.sidemenu .content h2:focus{
+   opacity: 0.6;
+}
+.sidemenu .content li{
+   line-height: 20px;
+   margin: 20px 0; 
+}
+.sidemenu .content li a{
+   font-size: 12px;
+   font-weight: 300;
+   color: #fff;
+}
+.sidemenu .bottom li{
+   width: 100%;
+   background: #202020;
+   height: 50px;
+   line-height: 50px;
+   text-align: center;
+}
+.sidemenu .bottom li a{
+   color:#fff;
+   font-size:18px;
+   font-weight: 700;
+   display: block;
+}
 /* ------------------------ BANNER -------------------------- */
 
 /* ------------------------ MAIN -------------------------- */
