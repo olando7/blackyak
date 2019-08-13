@@ -24,4 +24,15 @@ $( function(){
       controls:false,
       auto:true
    }); //banner
+
+   $('.best_list').bxSlider({
+      mode:'vertical',
+      pager:false,
+      controls:false,
+      auto:true,
+      minSlides:5,
+      maxSlides:5,
+      moveSlides:1,
+      shrinkItems:true
+   }); //best
 });

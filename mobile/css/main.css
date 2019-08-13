@@ -30,7 +30,31 @@ section h2::before{
    display: inline-block;
    margin-right: 10px;
 }
-
+.sub_btn{
+   width: 150px;
+   height: 50px;
+   margin: 0 auto;
+   border: 3px solid #0d0d0d;
+   display: block;
+   text-align: center;
+   line-height: 50px;
+   font-family: 'Montserrat', sans-serif;
+   font-size:18px;
+   text-transform: uppercase;
+   background: #fff;
+}
+.call_btn{
+   width: 180px;
+   height: 40px;
+   display: block;
+   margin: 20px auto 0;
+   background: #0d0d0d;
+   font-weight: 500;
+   color:#fff;
+   text-align: center;
+   line-height: 40px;
+   font-size:14px;
+}
 /* ------------------------ HEADER -------------------------- */
 .header_nav{
    display: flex;
@@ -282,8 +306,129 @@ aside.active .sidemenu{
 }
 
 /* ------------------------ MAIN -------------------------- */
-
-/* best */
-
-
+.best_list li{
+   border-bottom:1px solid #eaeaea;
+   border-top:1px solid #eaeaea;
+   height: 100px;
+   width: 100%;
+   padding: 0 20px;
+}
+.best_list li a{
+   display: flex;
+   align-items: center;
+   height: 100%;
+}
+.best_list li a div{
+   margin-left: 10px;
+}
+.best_list li a div h3{
+   font-weight: 700;
+   font-size:14px;
+}
+.best_list li a div p span:first-child{
+   font-size: 12px;
+   font-weight: 500;
+   color:#2F80ED;
+}
+.best_list li a div p span:last-child{
+   font-size: 10px;
+   font-weight: 300;
+}
+.best_list li a div p span:last-child em{
+   text-decoration-line: line-through;
+}
+/* season */
+.season .sub_btn{
+   margin: 20px auto 40px;
+}
+.season_list li a{
+   background: no-repeat left top/cover;
+   text-indent: -9999em;
+   display: block;
+   width: 100%;
+}
+.season_list li div{
+   padding: 10px 45px 20px;
+   text-align: center;
+}
+.season_list li div h3{
+   font-weight: 500;
+   font-size: 14px;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+}
+.season_list li div{
+   font-size:12px;
+   font-weight: 300;
+}
+.season_list .season_01 a{
+   background-image: url(../images/event_01.jpg);
+   height: 420px;
+}
+.season_list .season_02 a{
+   background-image: url(../images/event_02.jpg);
+   height: 322px;
+}
+.season_list .season_03 a{
+   background-image: url(../images/event_03.jpg);
+   height: 364px;
+}
+/* sns */
+.sns iframe{
+   width: 100%;
+   height: 180px;
+}
+.sns_list{
+   display: flex;
+   justify-content: center;
+}
+.sns_list li{
+   margin: 20px 10px;
+}
+.sns_list li a{
+   color:#fff;
+   font-size: 20px;
+   display: inline-block;
+   width: 40px; height: 40px;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 40px;
+}
+.sns_list li .facebook{
+   background: #3D5B9B;
+}
+.sns_list li .instagram{
+   background: linear-gradient(180deg, #9B51E0 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FF1AE8 0%, rgba(255, 255, 255, 0) 100%), #F2994A;
+}
+.sns_list li .youtube{
+   background: #ff0000;
+}
 /* ------------------------ FOOTER -------------------------- */
+footer p{
+   font-size: 10px;
+   font-weight: 300;
+}
+.callcenter{
+   background: #f6f6f6;
+   padding:20px 0;
+   text-align: center;
+}
+.callcenter h3{
+   font-size: 12px;
+   margin-bottom: 10px;
+}
+.adress{
+   padding: 30px 0;
+   text-align: center;
+}
+.adress .top{
+   margin-bottom: 20px;
+}
+.copyright{
+   width: 100%;
+   height: 40px;
+   background: #0d0d0d;
+   color:#fff;
+   text-align: center;
+   line-height: 40px;
+}
