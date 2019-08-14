@@ -1,7 +1,8 @@
 $( function(){
    
    $( "#sidemenu_accodion" ).accordion({
-      heightStyle: "content"
+      heightStyle: "content",
+      collapsible: true
    }); //sidemenu
  
    $('.hamburger').click(function(){
@@ -13,12 +14,17 @@ $( function(){
          $('aside').removeClass('active');
          $('body').css({position: 'static'});
       }
+      $('.main_search_modal').slideUp();
+      $('.main-search').removeClass('close');
    }); //hamburger
 
    $('.search_btn').click(function(ev){
       ev.preventDefault();
       $('.main_search_modal').slideToggle();
       $(this).parent('.main-search').toggleClass('close');
+      $('.hamburger').removeClass('active');
+      $('aside').removeClass('active');
+      $('body').css({position: 'static'});
    }); //search
 
    $('.banner_slider').bxSlider({
@@ -43,6 +49,6 @@ $( function(){
    });
    $('.card_checked').click(function(){
       $('.plv').addClass('active');
-   });
+   }); //product list view
 
 });
