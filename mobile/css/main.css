@@ -325,16 +325,16 @@ aside.active .sidemenu{
    font-weight: 700;
    font-size:14px;
 }
-.best_list li a div p span:first-child{
+.best_list li a div p .pay{
    font-size: 12px;
    font-weight: 500;
    color:#2F80ED;
 }
-.best_list li a div p span:last-child{
+.best_list li a div p .dispay{
    font-size: 10px;
    font-weight: 300;
 }
-.best_list li a div p span:last-child em{
+.best_list li a div p .dispay em{
    text-decoration-line: line-through;
 }
 /* season */
