@@ -33,6 +33,7 @@ $( function(){
       minSlides:5,
       maxSlides:5,
       moveSlides:1,
-      shrinkItems:true
+      shrinkItems:true,
+      touchEnabled:false
    }); //best
 });

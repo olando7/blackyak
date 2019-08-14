@@ -109,7 +109,7 @@ section h2::before{
    background: #fff;
 }
 .logo a{
-   background: url(../images/logo.png) no-repeat center center;
+   background: url(../images/logo@2x.png) no-repeat center center/80%;
    display: block;
    width: 100%;
    text-indent: -9999em;
@@ -260,7 +260,7 @@ aside.active .sidemenu{
    position: relative;
 }
 .banner li a{
-   background: no-repeat left top/cover;
+   background: no-repeat center top/100% 100%;
    text-indent: -9999em;
    display: block;
    width: 100%;
@@ -325,6 +325,10 @@ aside.active .sidemenu{
    font-weight: 700;
    font-size:14px;
 }
+.best_list li a img{
+   width: 80px;
+   height: 80px;
+}
 .best_list li a div p .pay{
    font-size: 12px;
    font-weight: 500;
@@ -342,10 +346,11 @@ aside.active .sidemenu{
    margin: 20px auto 40px;
 }
 .season_list li a{
-   background: no-repeat left top/cover;
+   background: no-repeat center top/100%;
    text-indent: -9999em;
    display: block;
    width: 100%;
+   height: 100%;
 }
 .season_list li div{
    padding: 10px 45px 20px;
