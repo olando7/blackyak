@@ -18,6 +18,7 @@ $( function(){
    $('.search_btn').click(function(ev){
       ev.preventDefault();
       $('.main_search_modal').slideToggle();
+      $(this).parent('.main-search').toggleClass('close');
    }); //search
 
    $('.banner_slider').bxSlider({
@@ -36,4 +37,12 @@ $( function(){
       shrinkItems:true,
       touchEnabled:false
    }); //best
+
+   $('.list_checked').click(function(){
+     $('.plv').removeClass('active');
+   });
+   $('.card_checked').click(function(){
+      $('.plv').addClass('active');
+   });
+
 });
