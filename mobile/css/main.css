@@ -118,6 +118,7 @@ section h2::before{
    justify-content: center;
    border:1px solid #fafafa;
    margin: 0 auto;
+   padding:0 30px;
 }
 /* ------------------------ HEADER -------------------------- */
 .header_nav{
@@ -261,7 +262,7 @@ aside.active .sidemenu{
    position: absolute;
    height: auto;
    left: 0; right: 0; top: 40px; bottom: 40px;
-   overflow-y: scroll;
+   overflow-y: auto;
 }
 .sidemenu .content h2{
    color:#ff0000;
@@ -314,6 +315,7 @@ aside.active .sidemenu{
    top: 60px; right: 0; left: 0;
    z-index: 150;
    display: none;
+   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .main_search_modal form{
    width: 80%;
@@ -495,14 +497,14 @@ footer p{
    color:#0d0d0d;
 }
 .product_view label{
-   font-size: 12px;
+   font-size: 20px;
    color:#bfbfbf;
-   margin-left: 3px;
+   margin-left: 5px;
 }
 .product_view input:checked + label{
    color:#0d0d0d;
 }
-/* ------------------------ SUB-DETAILE -------------------------- */
+/* ------------------------ SUB-DETAIL -------------------------- */
 
 /* ------------------------ SUB-SEARCH -------------------------- */
 .search_title h2{
