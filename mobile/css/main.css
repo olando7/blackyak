@@ -505,7 +505,145 @@ footer p{
    color:#0d0d0d;
 }
 /* ------------------------ SUB-DETAIL -------------------------- */
-
+.sub-detail .top{
+   margin: 40px 0;
+   padding: 0 30px;
+}
+.sub-detail .top h2{
+   font-size:20px;
+   font-weight: 700;
+   margin-bottom: 10px;
+}
+.sub-detail .top .review{
+   display: flex;
+   margin-bottom: 10px;
+}
+.sub-detail .top .review p:first-child{
+   font-size:15px;
+   color:#ff0000;
+}
+.sub-detail .top .review p:last-child{
+   font-size: 10px;
+   font-weight: 500;
+   margin-left: 10px;
+}
+.sub-detail .top .price{
+   display: flex;
+}
+.sub-detail .top .price h3{
+   font-size:18px;
+   font-weight: 500;
+   color:#2F80ED;
+   margin-right: 5px;
+}
+.sub-detail .top .price p{
+   font-weight: 300;
+   font-size:10px;
+}
+.sub-detail .top .price p em{
+   text-decoration-line: line-through;
+}
+.sub-detail .content img{
+   width: 100%;
+   height: auto;
+   background: #fafafa;
+   margin-bottom: 40px;
+}
+.sub-detail .content h4{
+   font-size: 14px;
+   font-family: 'Montserrat', sans-serif;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+   text-align: center;
+}
+.sub-detail .content .color form{
+   display: flex;
+   justify-content: center;
+}
+.sub-detail .content .color input{
+   display: none;
+}
+.sub-detail .content .color input:checked + label::after{
+   content: '';
+   position: absolute;
+   top: 0; left: 0; right: 0; bottom: 0;
+   border: 3px solid rgba(0,0,0,.5);
+   border-radius: 50%;
+}
+.sub-detail .content .color label{
+   margin: 0 5px 30px;
+   text-indent: -9999em;
+   width: 30px; height: 30px;
+   border-radius: 50%;
+   position: relative;
+}
+.sub-detail .content .color .blue{
+   background: #2F80ED;
+}
+.sub-detail .content .color .khaki{
+   background: #494833;
+}
+.sub-detail .content .color .navi{
+   background: #01003E;
+}
+.sub-detail .content .color .orange{
+   background: #F2994A;
+}
+.sub-detail .content .size ul{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-bottom: 40px;
+   width: 100%;
+}
+.sub-detail .content .size li{
+   width: 50px;
+   height: 40px;
+   text-align: center;
+   border:1px solid #eaeaea;
+   line-height: 40px;
+   box-sizing: border-box;
+}
+.sub-detail .content .size li a{
+   display: block;
+   font-size:14px;
+   font-family: 'Montserrat', sans-serif;
+}
+.sub-detail .content .size li a:active{
+   background: #2F80ED;
+   color:#fff;
+}
+.sub-detail hr{
+   width: 90%;
+   margin: 0 auto;
+   border:1px dashed #eaeaea;
+}
+.sub-detail .payment{
+   width: 90%;
+   padding:20px;
+}
+.sub-detail .payment .amount{
+   display: flex;
+   justify-content: space-between;
+}
+.sub-detail .payment .amount .amount_title h5{
+   font-size: 14px;
+   font-weight: 500;
+}
+.sub-detail .payment .amount .amount_title p{
+   font-size: 10px;
+   font-weight: 300;
+}
+.sub-detail .payment .amount .amount_title p span:after{
+   content: ' | ';
+}
+.sub-detail .payment .amount .amount_title p span:last-child:after{
+   content: none;
+}
+.sub-detail .payment .amount form select{
+   width: 75px;
+   height: 35px;
+}
 /* ------------------------ SUB-SEARCH -------------------------- */
 .search_title h2{
    font-size:20px;

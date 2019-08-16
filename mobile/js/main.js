@@ -51,4 +51,11 @@ $( function(){
       $('.plv').addClass('active');
    }); //product list view
 
+   var productColor = $('.sub-detail .content .color label');
+
+   productColor.click(function(){
+      var $imageSrc = $(this).attr('data-image-src');
+      $('.sub-detail .content img').attr('src', $imageSrc);
+   }); //detail img
+
 });
