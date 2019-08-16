@@ -76,7 +76,6 @@ section h2::before{
    border-top:1px solid #eaeaea;
    height: 100px;
    width: 100%;
-   padding: 0 20px;
 }
 .plv li a{
    display: flex;
@@ -229,7 +228,7 @@ aside .sidemenu{
    width: 90%;
    background: #0d0d0d;
    transition: 0.5s;
-   overflow-y: scroll;
+   height: 100%;
 }
 aside.active .inner{
    opacity: 1;
@@ -259,6 +258,10 @@ aside.active .sidemenu{
 .sidemenu .content{
    text-transform: uppercase;
    padding: 20px 30px 0;
+   position: absolute;
+   height: auto;
+   left: 0; right: 0; top: 40px; bottom: 40px;
+   overflow-y: scroll;
 }
 .sidemenu .content h2{
    color:#ff0000;
@@ -284,6 +287,8 @@ aside.active .sidemenu{
    background: #202020;
    height: 50px;
    line-height: 50px;
+   position: absolute;
+   bottom: 0; right: 0; left: 0;
 }
 .sidemenu .bottom ul{
    display: flex;
