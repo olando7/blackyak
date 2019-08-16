@@ -502,3 +502,53 @@ footer p{
 .product_view input:checked + label{
    color:#0d0d0d;
 }
+/* ------------------------ SUB-DETAILE -------------------------- */
+
+/* ------------------------ SUB-SEARCH -------------------------- */
+.search_title h2{
+   font-size:20px;
+   font-weight: 300;
+   text-align: center;
+   margin: 40px 0;
+}
+.search_title h2 span, .search_title h2 em{
+   font-weight: 700;
+}
+.search_title h2 em{
+   color:#ff0000;
+}
+.sub-search_option{
+   display: flex;
+   justify-content: space-between;
+}
+.sub-search_option .relation{
+   display: flex;
+   width: 80%;
+   font-size: 12px;
+   height: 40px;
+   background: #f6f6f6;
+   line-height: 40px;
+   padding: 0 20px;
+}
+.sub-search_option .relation *{
+   margin-right: 10px;
+}
+.sub-search_option .relation h3{
+   font-weight: 500;
+}
+.sub-search_option .filter{
+   width: 20%;
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   font-size: 12px;
+   font-weight: 500;
+   background: #2F80ED;
+}
+.sub-search_option .filter a{
+   color:#fff;
+   display: block;
+}
+.sub-search_option .filter a svg{
+   margin-left: 5px;
+}
