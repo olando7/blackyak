@@ -58,4 +58,7 @@ $( function(){
       $('.sub-detail .content img').attr('src', $imageSrc);
    }); //detail img
 
+   $('.dtaile_dec_slide').bxSlider({
+      controls:false
+   });
 });

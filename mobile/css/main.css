@@ -48,16 +48,17 @@ section h2::before{
 /* ------------------------ COMMON -------------------------- */
 .sub_btn{
    width: 150px;
-   height: 50px;
+   height: 40px;
    margin: 0 auto;
-   border: 3px solid #0d0d0d;
+   border: 1px solid #bfbfbf;
    display: block;
    text-align: center;
-   line-height: 50px;
+   line-height: 40px;
    font-family: 'Montserrat', sans-serif;
-   font-size:18px;
+   font-size:14px;
    text-transform: uppercase;
    background: #fff;
+   box-sizing: border-box;
 }
 .call_btn{
    width: 180px;
@@ -119,6 +120,19 @@ section h2::before{
    border:1px solid #fafafa;
    margin: 0 auto;
    padding:0 30px;
+}
+.primary_btn{
+   width: 100%;
+   height: 40px;
+   line-height: 40px;
+   font-weight: 700;
+   color:#fff;
+   display: block;
+   background: #2F80ED;
+   text-align: center;
+   margin: 0 auto;
+   text-transform: uppercase;
+   font-size: 14px;
 }
 /* ------------------------ HEADER -------------------------- */
 .header_nav{
@@ -625,6 +639,7 @@ footer p{
 .sub-detail .payment .amount{
    display: flex;
    justify-content: space-between;
+   margin-bottom: 20px;
 }
 .sub-detail .payment .amount .amount_title h5{
    font-size: 14px;
@@ -640,9 +655,110 @@ footer p{
 .sub-detail .payment .amount .amount_title p span:last-child:after{
    content: none;
 }
-.sub-detail .payment .amount form select{
+.sub-detail #amount_count-button, .sub-detail .payment .amount select{
    width: 75px;
    height: 35px;
+   box-sizing: border-box;
+   background: #fff;
+   color:#0d0d0d;
+   padding: 0 10px;
+   font-size: 12px;
+   font-weight: 300;
+   display: block;
+   border:1px solid #eaeaea;
+   line-height: 35px;
+}
+/* .sub-detail .ui-selectmenu-icon{
+   background: url(../images/sellect_arrow.png) no-repeat center center/100%;
+   width: 12px;
+   height: 12px;
+}
+.ui-selectmenu-menu .ui-state-hover .ui-icon{
+   background-image: url(../images/sellect_arrow2.png);
+}
+.ui-selectmenu-menu .ui-menu .ui-menu-item-wrapper{
+   padding: 10px;
+   
+}
+.ui-selectmenu-menu .ui-widget.ui-widget-content{
+   padding:10px 0;
+   font-size: 12px;
+   font-weight: 300;
+   display: inline-block;
+   border:1px solid #eaeaea;
+   background: #fff;
+   border-radius: 0px 0px 5px 5px;
+}
+.ui-selectmenu-menu .ui-menu-item:hover{
+   border:none;
+   background: #2F80ED;
+   color:#fff;
+} */
+.sub-detail .paytotal{
+   padding: 20px 0 40px;
+   border-top: 3px solid #6f6f6f;
+}
+.sub-detail .paytotal .total{
+   display: flex;
+   justify-content: space-between;
+   font-family: 'Montserrat', sans-serif;
+   margin-bottom: 40px;
+}
+.sub-detail .paytotal .total p:first-child{
+   font-size: 18px;
+}
+.sub-detail .paytotal .total p:last-child{
+   font-size: 20px;
+   color:#2F80ED;
+}
+.sub-detail .paytotal .buy > .primary_btn{
+   margin-bottom: 10px;
+}
+.sub-detail .paytotal .buy div{
+   display: flex;
+}
+.sub-detail .paytotal .buy div .sub_btn{
+   margin: 0 0 0 10px;
+}
+.sub-detail .paytotal .buy div .sub_btn:first-child{
+   margin: 0;
+}
+.dtaile_dec{
+   border-top: 1px solid #bfbfbf;
+}
+.dtaile_dec .dtaile_dec_text{
+   font-size: 10px;
+   font-weight: 300;
+   text-align: center;
+   padding: 20px 0;
+}
+.dtaile_dec .dtaile_dec_text p:first-child{
+   margin-bottom: 20px;
+}
+.dtaile_dec .dtaile_dec_slide img{
+   width: 100%;
+   
+}
+.dtaile_dec .bx-wrapper{
+   position: relative;
+}
+.dtaile_dec .bx-pager{
+   position: absolute;
+   bottom: 10px; left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+}
+.dtaile_dec .bx-pager .bx-pager-link{
+   text-indent: -9999em;
+   border-radius: 50%;
+   display: inline-block;
+   background: #bfbfbf;
+   width: 10px;
+   height: 10px;
+   margin: 0 2.5px;
+}
+.dtaile_dec .bx-pager .bx-pager-link.active{
+   background: #ff0000;
 }
 /* ------------------------ SUB-SEARCH -------------------------- */
 .search_title h2{
