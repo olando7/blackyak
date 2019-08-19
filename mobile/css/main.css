@@ -971,6 +971,24 @@ select::-ms-expand { display: none; }
 .sub-login .top button{
    margin: 40px 0;
 }
+.sub-login .top form > p{
+   position: relative;
+}
+.sub-login .top form input.badlogin{
+   border: 1px solid #FF0000;
+   box-shadow: inset 0px 0px 10px rgba(255, 0, 0, 0.25);
+   color:#ff0000;
+}
+.sub-login .top form input.badlogin::placeholder{
+   visibility: hidden;
+}
+.sub-login .top span.badlogin{
+   color:#ff0000;
+   font-size: 10px;
+   font-weight: 300;
+   position: absolute;
+   left: 0; bottom: 100%;
+}
 .sub-login hr{
    border:none;
    background: #eaeaea;

@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>장바구니 | BLACKYAK</title>
+   <title>로그인 | BLACKYAK</title>
    <meta name="keywords" content="portfolio, blackyak, shopping, mobile">
    <meta name="description" content="3rd portfolio in blackyak mobile">
    <meta name="robots" content="all">
@@ -39,6 +39,7 @@
    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+   <script src="js/jquery.validate.min.js"></script>
    <script src="js/main.js"></script>
 </head>
 <body>
@@ -145,9 +146,13 @@
    <main class="sub-login">
       <div class="top container">
          <h2>로그인</h2>
-         <form action="#" method="POST">
-            <input type="text" id="userId" placeholder="아이디를 입력해주세요" class="my_form">
-            <input type="password" id="userPass" placeholder="비밀번호를 입력해주세요" class="my_form">
+         <form action="#" method="POST" id="login_form" novalidate>
+            <p>
+               <input type="text" id="userId" placeholder="아이디를 입력해주세요" class="my_form" name="userId">
+            </p>
+            <p>
+               <input type="password" id="userPass" placeholder="비밀번호를 입력해주세요" class="my_form" name="userPass">
+            </p>
             <div class="login_checkbox">
                <p>
                   <input type="checkbox" name="auto_login" id="auto_login">

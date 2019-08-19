@@ -78,4 +78,32 @@ $( function(){
          $this.siblings('input').prop('checked',false);
       }
    }); //checkbox
+
+   $("#login_form").validate({
+      rules:{
+         userId:{
+            required:true,
+            minlength:4
+         },
+         userPass:{
+            required:true,
+            minlength:6,
+            maxlength:12
+         }
+      },
+      messages:{
+         userId:{
+            required:'정확한 아이디가 아닙니다.',
+            minlength:'아이디는 4글자 이상 입력해주세요.'
+         },
+         userPass:{
+            required:'정확한 비밀번호가 아닙니다.',
+            minlength:'비밀번호를 6글자 이상 입력해주세요.',
+            maxlength:'비밀번호는 12글자로 제한되어 있습니다.'
+         }
+      },
+      errorClass: 'badlogin',
+      valideClass: 'goodlogin',
+      errorElement:'span'
+   });//login_form validate
 });
