@@ -47,9 +47,8 @@ section h2::before{
 }
 /* ------------------------ COMMON -------------------------- */
 .sub_btn{
-   width: 150px;
+   width: 49%;
    height: 40px;
-   margin: 0 auto;
    border: 1px solid #bfbfbf;
    display: block;
    text-align: center;
@@ -59,6 +58,7 @@ section h2::before{
    text-transform: uppercase;
    background: #fff;
    box-sizing: border-box;
+   margin: 0;
 }
 .call_btn{
    width: 180px;
@@ -584,6 +584,9 @@ footer p{
    border: 3px solid rgba(0,0,0,.5);
    border-radius: 50%;
 }
+.sub-detail .content .color input:checked + label.navi::after{
+   border-color: rgba(255,255,255,.5);
+}
 .sub-detail .content .color label{
    margin: 0 5px 30px;
    text-indent: -9999em;
@@ -668,33 +671,13 @@ footer p{
    display: block;
    border:1px solid #eaeaea;
    line-height: 35px;
+   -webkit-appearance: none; /* 네이티브 외형 감추기 */ 
+   -moz-appearance: none; 
+   appearance: none;
+   background: url(../images/sellect_arrow.png) no-repeat 85% 50%/15%;
 }
-/* .sub-detail .ui-selectmenu-icon{
-   background: url(../images/sellect_arrow.png) no-repeat center center/100%;
-   width: 12px;
-   height: 12px;
-}
-.ui-selectmenu-menu .ui-state-hover .ui-icon{
-   background-image: url(../images/sellect_arrow2.png);
-}
-.ui-selectmenu-menu .ui-menu .ui-menu-item-wrapper{
-   padding: 10px;
-   
-}
-.ui-selectmenu-menu .ui-widget.ui-widget-content{
-   padding:10px 0;
-   font-size: 12px;
-   font-weight: 300;
-   display: inline-block;
-   border:1px solid #eaeaea;
-   background: #fff;
-   border-radius: 0px 0px 5px 5px;
-}
-.ui-selectmenu-menu .ui-menu-item:hover{
-   border:none;
-   background: #2F80ED;
-   color:#fff;
-} */
+.sub-detail #amount_count-button, .sub-detail .payment .amount select::-ms-expand { display: none; } 
+/* IE 10, 11의 네이티브 화살표 숨기기 */
 .sub-detail .paytotal{
    padding: 20px 0 40px;
    border-top: 3px solid #6f6f6f;
@@ -713,16 +696,14 @@ footer p{
    color:#2F80ED;
 }
 .sub-detail .paytotal .buy > .primary_btn{
-   margin-bottom: 10px;
+   margin-bottom: 7px;
+}
+.sub-detail .paytotal .buy{
+   width: 100%;
 }
 .sub-detail .paytotal .buy div{
    display: flex;
-}
-.sub-detail .paytotal .buy div .sub_btn{
-   margin: 0 0 0 10px;
-}
-.sub-detail .paytotal .buy div .sub_btn:first-child{
-   margin: 0;
+   justify-content: space-between;
 }
 .dtaile_dec{
    border-top: 1px solid #bfbfbf;
@@ -738,7 +719,6 @@ footer p{
 }
 .dtaile_dec .dtaile_dec_slide img{
    width: 100%;
-   
 }
 .dtaile_dec .bx-wrapper{
    position: relative;
