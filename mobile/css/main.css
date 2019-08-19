@@ -150,6 +150,7 @@ section h2::before{
    margin: 0 auto;
    text-transform: uppercase;
    font-size: 14px;
+   border:none;
 }
 .my_check_01{
    width: 20px;
@@ -184,8 +185,21 @@ input:checked + .my_check_02{
    border:none;
    background: #2F80ED;
 }
-input:checked + .my_check_02 svg{
+input:checked + .my_check_02 svg, input:checked + .my_check_01 svg{
    visibility: visible;
+}
+.my_form{
+   width: 100%;
+   height: 40px;
+   border:1px solid #bfbfbf;
+   box-sizing: border-box;
+   font-size:12px;
+   padding: 0 10px;
+   margin-bottom: 20px;
+   font-weight: 300;
+}
+.my_form::placeholder{
+   color:#6f6f6f;
 }
 /* ------------------------ HEADER -------------------------- */
 .header_nav{
@@ -846,9 +860,6 @@ select::-ms-expand { display: none; }
 .sub-cart .top .top_check form input{
    display: none;
 }
-#cart_all_check:checked + .my_check_01 svg{
-   visibility: visible;
-}
 .sub-cart .top .top_check form label{
    font-weight: 300;
    margin-left: 5px;
@@ -935,4 +946,45 @@ select::-ms-expand { display: none; }
 }
 .sub-cart .cart_bottom .sub_btn{
    margin: 40px auto 0;
+}
+/* ------------------------ SUB-LOGIN -------------------------- */
+.sub-login .top h2{
+   font-size: 20px;
+   font-weight: 700;
+   margin: 20px 0 30px;
+}
+.sub-login .top .login_checkbox{
+   display: flex;
+}
+.sub-login .top .login_checkbox p{
+   display: flex;
+   margin-right: 10px;
+}
+.sub-login .top .login_checkbox p label{
+   margin-left: 5px;
+   font-size: 10px;
+   font-weight: 300;
+}
+.sub-login .top .login_checkbox p input{
+   display: none;
+}
+.sub-login .top button{
+   margin: 40px 0;
+}
+.sub-login hr{
+   border:none;
+   background: #eaeaea;
+   width: 100%;
+   height: 1px;
+}
+.sub-login .bottom{
+   padding: 40px 0;
+   text-align: center;
+}
+.sub-login .bottom p{
+   font-size: 12px;
+   font-weight: 300;
+}
+.sub-login .bottom a{
+   margin: 20px auto 0;
 }
