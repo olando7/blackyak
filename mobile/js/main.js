@@ -60,5 +60,22 @@ $( function(){
 
    $('.dtaile_dec_slide').bxSlider({
       controls:false
+   });//dtaile slide
+
+   $('.my_check_01').click(function(){
+      var $this = $(this);
+      if($this.siblings('input').prop('checked')==false){
+         $this.siblings('input').prop('checked',true);
+      }else{
+         $this.siblings('input').prop('checked',false);
+      }
    });
+   $('.my_check_02').click(function(){
+      var $this = $(this);
+      if($this.siblings('input').prop('checked')==false){
+         $this.siblings('input').prop('checked',true);
+      }else{
+         $this.siblings('input').prop('checked',false);
+      }
+   }); //checkbox
 });

@@ -45,7 +45,24 @@ section h2::before{
 .product_price .dispay em{
    text-decoration-line: line-through;
 }
+.total{
+   display: flex;
+   justify-content: space-between;
+   font-family: 'Montserrat', sans-serif;
+   margin-bottom: 40px;
+}
+.total p:first-child{
+   font-size: 18px;
+}
+.total p:last-child{
+   font-size: 20px;
+   color:#2F80ED;
+}
 /* ------------------------ COMMON -------------------------- */
+.container{
+   width: 90%;
+   margin: 0 auto;
+}
 .sub_btn{
    width: 49%;
    height: 40px;
@@ -133,6 +150,42 @@ section h2::before{
    margin: 0 auto;
    text-transform: uppercase;
    font-size: 14px;
+}
+.my_check_01{
+   width: 20px;
+   height: 20px;
+   border:1px solid #bfbfbf;
+   box-sizing: border-box;
+   background: #fff;
+   font-size:10px;
+   display: block;
+   text-align: center;
+   line-height: 20px;
+}
+.my_check_01 svg{
+   visibility: hidden;
+}
+.my_check_02{
+   width: 20px;
+   height: 20px;
+   border:1px solid #bfbfbf;
+   box-sizing: border-box;
+   background: #fff;
+   font-size:10px;
+   display: block;
+   text-align: center;
+   line-height: 20px;
+}
+.my_check_02 svg{
+   visibility: hidden;
+   color:#fff;
+}
+input:checked + .my_check_02{
+   border:none;
+   background: #2F80ED;
+}
+input:checked + .my_check_02 svg{
+   visibility: visible;
 }
 /* ------------------------ HEADER -------------------------- */
 .header_nav{
@@ -636,8 +689,7 @@ footer p{
    border:1px dashed #eaeaea;
 }
 .sub-detail .payment{
-   width: 100%;
-   padding:20px;
+   padding: 20px 0;
    box-sizing: border-box;
 }
 .sub-detail .payment .amount{
@@ -673,27 +725,13 @@ footer p{
    line-height: 35px;
    -webkit-appearance: none; /* 네이티브 외형 감추기 */ 
    -moz-appearance: none; 
-   appearance: none;
-   background: url(../images/sellect_arrow.png) no-repeat 85% 50%/15%;
+   background: url(../images/sellect_arrow.png) no-repeat 85% 50%/14px 10px;;
 }
-.sub-detail #amount_count-button, .sub-detail .payment .amount select::-ms-expand { display: none; } 
+select::-ms-expand { display: none; } 
 /* IE 10, 11의 네이티브 화살표 숨기기 */
 .sub-detail .paytotal{
    padding: 20px 0 40px;
    border-top: 3px solid #6f6f6f;
-}
-.sub-detail .paytotal .total{
-   display: flex;
-   justify-content: space-between;
-   font-family: 'Montserrat', sans-serif;
-   margin-bottom: 40px;
-}
-.sub-detail .paytotal .total p:first-child{
-   font-size: 18px;
-}
-.sub-detail .paytotal .total p:last-child{
-   font-size: 20px;
-   color:#2F80ED;
 }
 .sub-detail .paytotal .buy > .primary_btn{
    margin-bottom: 7px;
@@ -788,4 +826,113 @@ footer p{
 }
 .sub-search_option .filter a svg{
    margin-left: 5px;
+}
+/* ------------------------ SUB-CART -------------------------- */
+.sub-cart .top h2{
+   font-size:20px;
+   font-weight: 700;
+   margin: 40px 0;
+   text-align: center;   
+}
+.sub-cart .top .top_check{
+   display: flex;
+   justify-content: space-between;
+   font-size:10px;
+}
+.sub-cart .top .top_check form{
+   display: flex;
+   margin-bottom: 20px;
+}
+.sub-cart .top .top_check form input{
+   display: none;
+}
+#cart_all_check:checked + .my_check_01 svg{
+   visibility: visible;
+}
+.sub-cart .top .top_check form label{
+   font-weight: 300;
+   margin-left: 5px;
+}
+.sub-cart .top .top_check p{
+   font-weight: 500;
+}
+.sub-cart .top .top_check p em{
+   color:#2F80ED;
+}
+.sub-cart .cart_list{
+   border-top:1px solid #eaeaea;
+   border-bottom:1px solid #eaeaea;
+}
+.sub-cart .cart_list_header{
+   background: #fafafa;
+}
+.sub-cart .cart_list_header form{
+   display: flex;
+   align-items: center;
+   height: 40px;
+}
+.sub-cart .cart_list_header form input{
+   display: none;
+}
+.sub-cart .cart_list_header form label{
+   margin-left: 5px;
+   font-size: 12px;
+   font-weight: 700;
+}
+.sub-cart .cart_list_content{
+   display: flex;
+   padding: 10px 0;
+}
+.sub-cart .cart_list_content img{
+   width: 80px;
+   height: 80px;
+}
+.sub-cart .cart_list_content .cart_list_dec{
+   margin-left: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.sub-cart .cart_list_content .cart_list_price{
+   display: flex;
+}
+.sub-cart .cart_list_content .cart_list_price h3{
+   color: #2F80ED;
+   font-size: 14px;
+   font-weight: 500;
+}
+.sub-cart .cart_list_content .cart_list_price p{
+   font-size: 10px;
+   font-weight: 300;
+   margin-left: 5px;
+}
+.sub-cart .cart_list_content .cart_list_price p em{
+   text-decoration-line: line-through;
+}
+.sub-cart .cart_list_select{
+   display: flex;
+}
+.sub-cart .cart_list_select select{
+   -webkit-appearance: none; /* 네이티브 외형 감추기 */ 
+   -moz-appearance: none; 
+   background: url(../images/sellect_arrow.png) no-repeat 85% 50%/14px 10px;
+   height: 25px;
+   display: block;
+   padding: 0 10px;
+   font-family: 'Montserrat', sans-serif;
+   font-size:12px;
+}
+#cart_size_count{
+   width: 120px;
+   background-position-x: 90%;
+}
+#cart_amount_count{
+   width: 80px;
+   margin-left: 10px;
+}
+.sub-cart .cart_bottom{
+   padding: 20px 0 40px;
+}
+.sub-cart .cart_bottom .sub_btn{
+   margin: 40px auto 0;
 }
