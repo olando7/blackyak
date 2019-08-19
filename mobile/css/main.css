@@ -633,8 +633,9 @@ footer p{
    border:1px dashed #eaeaea;
 }
 .sub-detail .payment{
-   width: 90%;
+   width: 100%;
    padding:20px;
+   box-sizing: border-box;
 }
 .sub-detail .payment .amount{
    display: flex;
