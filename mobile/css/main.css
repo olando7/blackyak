@@ -199,7 +199,13 @@ input:checked + .my_check_02 svg, input:checked + .my_check_01 svg{
    font-weight: 300;
 }
 .my_form::placeholder{
-   color:#6f6f6f;
+   color:#bfbfbf;
+}
+.my_form:disabled{
+   background: #fafafa;
+}
+.my_form:disabled::placeholder{
+   color:#bfbfbf;
 }
 /* ------------------------ HEADER -------------------------- */
 .header_nav{
@@ -739,7 +745,7 @@ footer p{
    line-height: 35px;
    -webkit-appearance: none; /* 네이티브 외형 감추기 */ 
    -moz-appearance: none; 
-   background: url(../images/sellect_arrow.png) no-repeat 85% 50%/14px 10px;;
+   background: url(../images/sellect_arrow.png) no-repeat 85% 50%/12px 7.5px;
 }
 select::-ms-expand { display: none; } 
 /* IE 10, 11의 네이티브 화살표 숨기기 */
@@ -926,7 +932,7 @@ select::-ms-expand { display: none; }
 .sub-cart .cart_list_select select{
    -webkit-appearance: none; /* 네이티브 외형 감추기 */ 
    -moz-appearance: none; 
-   background: url(../images/sellect_arrow.png) no-repeat 85% 50%/14px 10px;
+   background: url(../images/sellect_arrow.png) no-repeat 85% 50%/12px 7.5px;
    height: 25px;
    display: block;
    padding: 0 10px;
@@ -1005,4 +1011,120 @@ select::-ms-expand { display: none; }
 }
 .sub-login .bottom a{
    margin: 20px auto 0;
+}
+
+/* ------------------------ JOIN -------------------------- */
+.sub-join .join_title{
+   padding: 20px 0;
+   border-bottom: 1px solid #eaeaea;
+}
+.sub-join .join_title h2{
+   font-size: 20px;
+   font-weight: 700;
+}
+.sub-join form .confirm_btn{
+   margin: 40px 0;
+}
+.sub-join form .join_main p{
+   position: relative;
+}
+.sub-join form .join_main p:nth-child(5){
+   display: flex;
+}
+.sub-join form .join_main p:nth-child(5) span{
+   line-height: 40px;
+   margin: 0 5px;
+}
+#join_Email{
+   width: 30%;
+}
+#join_Email_adress{
+   width: 35%;
+}
+#email_select{
+   width: 35%;
+   height: 40px;
+   line-height: 40px;
+   font-size: 10px;
+   margin-left: 5px;
+   padding:0 10px;
+   box-sizing: border-box;
+   -webkit-appearance: none; /* 네이티브 외형 감추기 */ 
+   -moz-appearance: none; 
+   background: url(../images/sellect_arrow.png) no-repeat 90% 50%/12px 7.5px;
+}
+.sub-join form .join_main p:nth-child(7){
+   display: flex;
+   justify-content: space-between;
+}
+#join_userAdress{
+   width: 65%;
+   margin-right: 5px;
+}
+.post_btn{
+   width: 35%;
+   background: #0d0d0d;
+   color:#fff;
+   display: inline-block;
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+}
+.sub-join .join_news h3{
+   color:#ff0000;
+   font-size:12px;
+   font-weight: 500;
+   margin: 20px 0;
+}
+.sub-join .join_news p{
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   font-size: 10px;
+   font-weight: 300;
+   margin-bottom: 15px;
+}
+.sub-join .join_news p:last-child{
+   margin-bottom: 20px;
+}
+.sub-join .join_news p input{
+   display: none;
+}
+.sub-join .join_con{
+   display: flex;
+   justify-content: space-between;
+   font-size:10px;
+}
+.sub-join .join_con p{
+   display: flex;
+}
+.sub-join .join_con p span{
+   margin-right: 5px;
+}
+.sub-join .join_con input{
+   display: none;
+}
+.sub-join .join_con a{
+   color:#2F80ED;
+}
+.sub-join .join_con a svg{
+   margin-left: 5px;
+}
+.sub-join button{
+   margin: 40px 0;
+}
+.sub-join form input.badlogin{
+   border: 1px solid #FF0000;
+   box-shadow: inset 0px 0px 10px rgba(255, 0, 0, 0.25);
+   color:#ff0000;
+}
+.sub-join form input.badlogin::placeholder{
+   visibility: hidden;
+}
+.sub-join span.badlogin{
+   color:#ff0000;
+   font-size: 10px;
+   font-weight: 300;
+   position: absolute;
+   left: 0; bottom: 100%;
 }

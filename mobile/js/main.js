@@ -82,8 +82,7 @@ $( function(){
    $("#login_form").validate({
       rules:{
          userId:{
-            required:true,
-            minlength:4
+            required:true
          },
          userPass:{
             required:true,
@@ -94,7 +93,6 @@ $( function(){
       messages:{
          userId:{
             required:'정확한 아이디가 아닙니다.',
-            minlength:'아이디는 4글자 이상 입력해주세요.'
          },
          userPass:{
             required:'정확한 비밀번호가 아닙니다.',
@@ -106,4 +104,70 @@ $( function(){
       valideClass: 'goodlogin',
       errorElement:'span'
    });//login_form validate
+
+   $('#email_select').change(function(){ $("#email_select option:selected").each(function () {
+      if($(this).val()== '1'){ 
+         //직접입력일 경우 
+         $("#join_Email_adress").val(''); //값 초기화
+         $("#join_Email_adress").attr("disabled",false); //활성화
+      }else{
+         $("#join_Email_adress").val($(this).text()); //선택값 입력
+         $("#join_Email_adress").attr("disabled",true); //비활성화
+         } 
+      }); 
+   });
+
+   $("#join_form").validate({
+      rules:{
+         join_userName:{
+            required:true
+         },
+         join_userID:{
+            required:true
+         },
+         join_userPass:{
+            required:true,
+            minlength:6,
+            maxlength:12
+         },
+         join_userPass_re:{
+            required:true,
+            equalTo:"#join_userPass"
+         },
+         join_userPhone:{
+            required:true,
+            number: true
+         }
+      },
+      messages:{
+         join_userName:{
+            required:'이름은 필수입니다.'
+         },
+         join_userID:{
+            required:'아이디는 필수입니다.'
+         },
+         join_userPass:{
+            required:'비밀번호는 필수입니다.',
+            minlength:'비밀번호는 6글자 이상이어야 합니다.',
+            maxlength:'비밀번호는 12글자 이하여야 합니다.'
+         },
+         join_userPass_re:{
+            required:'비밀번호 확인은 필수입니다.',
+            equalTo:'비밀번호가 일치하지 않습니다.'
+         },
+         join_userPhone:{
+            required:'휴대폰 번호는 필수입니다.',
+            number:'숫자만 입력할 수 있습니다.'
+         }
+      },
+      errorClass: 'badlogin',
+      valideClass: 'goodlogin',
+      errorElement:'span'
+   });//login_form validate
+
+   $('.sub-join button').click(function(){
+      if($('#join_confirm').prop('checked') == false){
+         alert('가입약관에 동의하지 않았습니다.')
+      }
+   });
 });
