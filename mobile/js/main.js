@@ -163,11 +163,11 @@ $( function(){
       errorClass: 'badlogin',
       valideClass: 'goodlogin',
       errorElement:'span'
-   });//login_form validate
+   });//join_form validate
 
    $('.sub-join button').click(function(){
       if($('#join_confirm').prop('checked') == false){
          alert('가입약관에 동의하지 않았습니다.')
       }
-   });
+   }); //join confirm
 });
