@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>주문결제 | BLACKYAK</title>
+   <meta name="keywords" content="portfolio, blackyak, shopping, mobile">
+   <meta name="description" content="3rd portfolio in blackyak mobile">
+   <meta name="robots" content="all">
+   <!-- open garph -->
+   <meta property="og:title" content="BLACKYAK" />
+   <meta property="og:type" content="website" />
+   <meta property="og:description" content="3rd portfolio in blackyak mobile" />
+   <meta property="og:url" content="http://m.blackyak.com" />
+   <meta property="og:image" content="http://m.blackyak.com/images/logo.png" />
+   <!-- favicon -->
+   <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+   <link rel="manifest" href="/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+   <!-- css -->
+   <link rel="stylesheet" href="css/main.css">
+   <!-- script -->
+   <script src="js/all.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+   <script src="js/jquery.validate.min.js"></script>
+   <script src="js/main.js"></script>
+</head>
+<body>
+   <header>
+      <ul class="header_nav">
+         <li class="hamburger">
+            <div class="open">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+         </li>
+         <li class="logo">
+            <h1><a href="index.html">blackyak</a></h1>
+         </li>
+         <li class="main-search">
+            <a href="" class="search_btn"><i class="fas fa-search"></i><em><i class="fas fa-times"></i></em></a>
+         </li>
+         <li class="main-cart">
+            <a href="cart.html" class="cart_btn"><i class="fas fa-shopping-cart"></i><span>0</span></a>
+         </li>
+      </ul>
+      <div class="main_search_modal">
+         <form action="search.html" method="GET">
+            <input type="text">
+            <button type="submit"><i class="fas fa-search"></i></button>
+         </form>
+      </div>
+   </header>
+   <aside>
+      <div class="inner"></div>
+      <div class="sidemenu">
+         <div class="top">
+            <ul>
+               <li><a href="login.html">로그인</a></li>
+               <li><a href="join.html">회원가입</a></li>
+               <li><a href="">MY PAGE</a></li>
+            </ul>
+         </div> <!-- sidemenu top -->
+         <div class="content">
+            <ul id="sidemenu_accodion">
+               <li>
+                  <h2>men</h2>
+                  <ul>
+                     <li><a href="product.html">top50</a></li>
+                     <li><a href="product.html">자켓/조끼</a></li>
+                     <li><a href="product.html">티셔츠/상의</a></li>
+                     <li><a href="product.html">바지/하의</a></li>
+                     <li><a href="product.html">속옷/내의</a></li>
+                     <li><a href="product.html">신발</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <h2>women</h2>
+                  <ul>
+                     <li><a href="">top50</a></li>
+                     <li><a href="">자켓/조끼</a></li>
+                     <li><a href="">티셔츠/상의</a></li>
+                     <li><a href="">바지/하의</a></li>
+                     <li><a href="">속옷/내의</a></li>
+                     <li><a href="">신발</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <h2>kids</h2>
+                  <ul>
+                     <li><a href="">top50</a></li>
+                     <li><a href="">자켓/조끼</a></li>
+                     <li><a href="">티셔츠/상의</a></li>
+                     <li><a href="">바지/하의</a></li>
+                     <li><a href="">속옷/내의</a></li>
+                     <li><a href="">신발</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <h2>gear</h2>
+                  <ul>
+                     <li><a href="">top50</a></li>
+                     <li><a href="">배낭/가방</a></li>
+                     <li><a href="">텐트/그늘막</a></li>
+                     <li><a href="">등산용품</a></li>
+                     <li><a href="">캠핑용품</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <h2>brand</h2>
+                  <ul>
+                     <li><a href="">lookbook</a></li>
+                     <li><a href="">outlet</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div> <!-- sidemenu content -->
+         <div class="bottom">
+            <ul>
+               <li><a href="">커뮤니티</a></li>
+               <li><a href="">클럽</a></li>
+               <li><a href="">매장</a></li>
+               <li><a href="">고객센터</a></li>
+            </ul>
+         </div> <!-- sidemenu bottom -->
+      </div>
+   </aside>
+   <main class="sub-payment">
+      <h2 class="container">주문 결제</h2>
+      <div class="head">
+         <div class="payment_product">
+            <div class="container">
+               <img src="images/item_01@2x.png" alt="M라이트에어자켓(남성) D/BLUE">
+               <div class="info">
+                  <h3>M라이트에어자켓(남성) D/BLUE</h3>
+                  <div>
+                     <p>78,000 원</p>
+                     <p>
+                        <span>size : 95</span>
+                        <span>수량 : 1</span>
+                     </p>
+                  </div>
+               </div> <!-- info -->
+            </div>
+         </div> <!-- payment_product -->
+         <div class="payment_price container">
+            <p>
+               <span>총 주문가격</span>
+               <span><em>78,000</em></span>
+            </p>
+            <hr/>
+            <div class="option">
+               <p>
+                  <span>할인</span>
+                  <span>0</span>
+               </p>
+               <p>
+                  <span>배송비</span>
+                  <span>0</span>
+               </p>
+            </div>
+            <hr/>
+            <div class="total">
+               <p>Total</p>
+               <p>78,000</p>
+            </div>
+         </div> <!-- payment_price -->
+      </div> <!-- head -->
+      <div class="main">
+         <div class="payment_maintitle">
+            <h3>주문고객/배송지정보</h3>
+         </div>
+         <form action="#" method="POST" class="container">
+            <div class="order">
+               <h4>주문하시는 분</h4>
+               <hr/>
+               <div>
+                  <p>
+                     <input type="text" id="payment_name_01" name="payment_name_01" placeholder="이름 (필수)" class="my_form">
+                  </p>
+                  <p>
+                     <input type="text" id="payment_phone_01" name="payment_phone_01" placeholder="휴대폰 번호 (필수)" class="my_form">
+                  </p>
+                  <p>
+                     <input type="text" id="payment_email" name="payment_email" placeholder="E-mail" class="my_form">
+                     <span>@</span>
+                     <input type="text" id="payment_email_adress" name="payment_email_adress" class="my_form" disabled>
+                     <select name="payment_email_select" id="payment_email_select">
+                        <option disabled selected value="이메일 선택">이메일 선택</option>
+                        <option value="1">직접입력</option>
+                        <option value="gmail.com">gmail.com</option>
+                        <option value="naver.com">naver.com</option>
+                        <option value="daum.net">daum.net</option>
+                     </select>
+                  </p>
+               </div>
+            </div>
+            <div class="delivery">
+               <div class="title">
+                  <h4>받으시는 분</h4>
+                  <div>
+                     <input type="checkbox" id="payment_check">
+                     <span class="my_check_01"><i class="fas fa-check"></i></span>
+                     <label for="payment_check">주문자와 동일</label>
+                  </div>
+               </div>
+               <hr/>
+               <div>
+                  <p>
+                     <input type="text" id="payment_name_02" name="payment_name_02" placeholder="이름 (필수)" class="my_form">
+                  </p>
+                  <p>
+                     <input type="text" id="payment_phone_02" name="payment_phone_02" placeholder="휴대폰 번호 (필수)" class="my_form">
+                  </p>
+                  <p>
+                     <input type="text" id="payment_telephon" name="payment_telephon" placeholder="전화번호" class="my_form">
+                  </p>
+                  <p>
+                     <input type="text" id="payment_adress" name="payment_adress" placeholder="주소 (필수)" class="my_form" disabled>
+                     <a href="" class="post_btn">우편번호</a>
+                  </p>
+                  <p>
+                     <input type="text" id="payment_adress_more" name="payment_adress_more" placeholder="나머지 주소" class="my_form">
+                  </p>
+                  <p>
+                     <input type="text" id="payment_messege" name="payment_messege" placeholder="배송메시지" class="my_form">
+                  </p>
+               </div>
+            </div>
+            <div class="payment_cash">
+               <h4>결제수단</h4>
+               <hr/>
+               <ul class="payment_tool">
+                  <li><a href="#credit">신용카드</a></li>
+                  <li><a href="#realtime">무통장입금</a></li>
+                  <li><a href="#v_account">실시간이체</a></li>
+                  <li><a href="#paynow">페이나우</a></li>
+               </ul>
+               <div id="credit">
+                  <div>
+                     <select name="credit_sec" id="credit_sec" class="payment_select">
+                        <option disabled selected value="신용카드 선택">신용카드 선택</option>
+                        <option value="삼성카드">삼성카드</option>
+                        <option value="KB국민카드">KB국민카드</option>
+                        <option value="현대카드">현대카드</option>
+                        <option value="신한카드">신한카드</option>
+                        <option value="하나카드">하나카드</option>
+                        <option value="롯데카드">롯데카드</option>
+                     </select>
+                     <select name="credit_mip" id="credit_mip" class="payment_select">
+                        <option disabled selected value="할부기간 선택">할부기간 선택</option>
+                        <option value="3개월">3개월</option>
+                        <option value="6개월">6개월</option>
+                        <option value="10개월">10개월</option>
+                        <option value="12개월">12개월</option>
+                     </select>
+                  </div>
+               </div>
+               <div id="v_account" method="POST">
+                  <div>
+                     <select name="pay_bank" id="pay_bank" class="payment_select">
+                        <option disabled selected value="입금은행 선택">입금은행 선택</option>
+                        <option value="기업은행">기업은행</option>
+                        <option value="국민은행">국민은행</option>
+                        <option value="우리은행">우리은행</option>
+                        <option value="신한은행">신한은행</option>
+                        <option value="농협은행">농협은행</option>
+                        <option value="하나은행">하나은행</option>
+                     </select>
+                  </div>
+               </div>
+               <div id="realtime">
+                  <h5>실시간 계좌이체 결제안내</h5>
+                  <ul>
+                     <li>실시간 계좌 이체는 자금 이체에 따르는 별도의 수수료가 부과되지 않습니다.</li>
+                     <li>상품 결제시 입력한 본인의 계좌에서 즉시 이체 처리되며, 처리과정에서 문제 발생시 취소처리와 함께 즉시 재입금 처리 됩니다.</li>
+                     <li>실시간 계좌 이체 은행 별 이용시간을 반드시 확인하시기 바랍니다.</li>
+                     <li>실시간 계좌는 수 분 이내에 이체처리 내역을 확인할 수 있습니다.</li>
+                  </ul>
+               </div>
+               <div id="paynow">
+                  <h5>페이나우란?</h5>
+                  <p>신용카드를 미리 등록한 후 비밀번호만으로 빠르고 간편하게 결제할 수 있는 서비스입니다.</p>
+               </div>
+            </div> <!-- payment_cash -->
+            <div class="payment_confirm">
+               <p>
+                  <input type="checkbox" id="join_confirm" name="join_confirm">
+                  <span class="my_check_02"><i class="fas fa-check"></i></span>
+                  <label for="join_confirm">구매자 동의</label>
+               </p>
+               <a href="">구매자 약관 전문 보기<i class="fas fa-question-circle"></i></a>
+            </div>
+            <button type class="primary_btn">결제하기</button>
+         </form> <!-- container -->
+      </div> <!-- main -->
+   </main>
+   <footer>
+      <div class="callcenter">
+         <h3>ARS 문의 : 02-2286-9000 </h3>
+         <p>평일 10:00~17:00(점심 12:00~13:00 / 토,일,공휴일 휴무)</p>
+         <a href="" class="call_btn">고객센터 연결</a>
+      </div>
+      <div class="adress">
+         <div class="top">
+            <p>[주]블랙야크 대표이사 : 강태선 개인정보책임자 : 황일찬</p>
+            <p>사업자등록번호 : 211-81-56627</p>
+            <p>통신판매업신고 : 제2016-서울서초-1484호</p>
+            <p>137-886 서울특별시 서초구 바우뫼로201 블랙야크 양재사옥</p>
+         </div>
+         <div class="bottom">
+            <p>FAX 02)2286-9700</p>
+            <p>blackyakmall@blackyak.com</p>
+         </div>
+      </div>
+      <div class="copyright">
+         <p>Copyright &copy; BLACKYAK CO.LTD.ALL RIGHT RESERVED.</p>
+      </div>
+   </footer>
+</body>
+</html>

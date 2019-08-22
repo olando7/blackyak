@@ -170,4 +170,6 @@ $( function(){
          alert('가입약관에 동의하지 않았습니다.')
       }
    }); //join confirm
+
+   $( ".payment_cash" ).tabs();
 });

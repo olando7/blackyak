@@ -1028,20 +1028,20 @@ select::-ms-expand { display: none; }
 .sub-join form .join_main p{
    position: relative;
 }
-.sub-join form .join_main p:nth-child(5){
+.sub-join form .join_main p:nth-child(5), .sub-payment .order > div p:last-child{
    display: flex;
 }
-.sub-join form .join_main p:nth-child(5) span{
+.sub-join form .join_main p:nth-child(5) span, .sub-payment .order > div p:last-child span{
    line-height: 40px;
    margin: 0 5px;
 }
-#join_Email{
+#join_Email, #payment_email{
    width: 30%;
 }
-#join_Email_adress{
+#join_Email_adress, #payment_email_adress{
    width: 35%;
 }
-#email_select{
+#email_select, #payment_email_select{
    width: 35%;
    height: 40px;
    line-height: 40px;
@@ -1053,11 +1053,11 @@ select::-ms-expand { display: none; }
    -moz-appearance: none; 
    background: url(../images/sellect_arrow.png) no-repeat 90% 50%/12px 7.5px;
 }
-.sub-join form .join_main p:nth-child(7){
+.sub-join form .join_main p:nth-child(7),.sub-payment .delivery > div p:nth-child(4){
    display: flex;
    justify-content: space-between;
 }
-#join_userAdress{
+#join_userAdress, #payment_adress{
    width: 65%;
    margin-right: 5px;
 }
@@ -1090,24 +1090,24 @@ select::-ms-expand { display: none; }
 .sub-join .join_news p input{
    display: none;
 }
-.sub-join .join_con{
+.sub-join .join_con, .payment_confirm{
    display: flex;
    justify-content: space-between;
    font-size:10px;
 }
-.sub-join .join_con p{
+.sub-join .join_con p, .payment_confirm p{
    display: flex;
 }
-.sub-join .join_con p span{
+.sub-join .join_con p span, .payment_confirm p span{
    margin-right: 5px;
 }
-.sub-join .join_con input{
+.sub-join .join_con input, .payment_confirm input{
    display: none;
 }
-.sub-join .join_con a{
+.sub-join .join_con a, .payment_confirm a{
    color:#2F80ED;
 }
-.sub-join .join_con a svg{
+.sub-join .join_con a svg .payment_confirm a svg{
    margin-left: 5px;
 }
 .sub-join button{
@@ -1127,4 +1127,156 @@ select::-ms-expand { display: none; }
    font-weight: 300;
    position: absolute;
    left: 0; bottom: 100%;
+}
+/* ------------------------ PAYMENT -------------------------- */
+.sub-payment h2{
+   font-weight: 700;
+   font-size: 20px;
+   margin: 20px auto;
+}
+.sub-payment .payment_product{
+   padding:20px 0;
+   border-top:1px solid #eaeaea;
+   border-bottom:1px solid #eaeaea;
+}
+.sub-payment .payment_product > div{
+   display: flex;
+}
+.sub-payment .payment_product img{
+   width: 80px;
+   height: 80px;
+}
+.sub-payment .payment_product .info{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin-left: 10px;
+}
+.sub-payment .payment_product .info h3{
+   font-size: 14px;
+   font-weight: 700;
+}
+.sub-payment .payment_product .info p:first-child{
+   font-size:12px;
+   font-weight: 500;
+   color: #2F80ED;
+}
+.sub-payment .payment_product .info p:last-child{
+   font-size:10px;
+   font-weight: 300;
+}
+.sub-payment .payment_product .info p span:first-child::after{
+   content: ' / ';
+}
+.sub-payment .payment_price{
+   padding: 20px 0 40px;
+}
+.sub-payment .payment_price > p:nth-child(1){
+   display: flex;
+   justify-content: space-between;
+   font-size:12px;
+}
+.sub-payment .payment_price > p:nth-child(1) em{
+   font-weight: 500;
+}
+.sub-payment .payment_price .option{
+   padding: 20px 0;
+   font-size: 10px;
+   color: #ff0000;
+}
+.sub-payment .payment_price .option p{
+   display: flex;
+   justify-content: space-between;
+}
+.sub-payment .payment_price .total{
+   margin-top: 20px;
+}
+.sub-payment .payment_maintitle{
+   font-size: 14px;
+   font-weight: 700;
+   text-align: center;
+   padding:20px 0;
+   border-top:1px solid #eaeaea;
+   border-bottom:1px solid #eaeaea;
+}
+.sub-payment .main h4{
+   font-size:12px;
+   font-weight: 500;
+   margin-top: 20px;
+}
+.sub-payment .main hr{
+   border:none;
+   width: 100%;
+   height: 1px;
+   background: #eaeaea;
+   margin-bottom: 20px;
+}
+.sub-payment .delivery h4{
+   margin: 0;
+}
+.sub-payment .delivery .title{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 20px;
+}
+.sub-payment .delivery .title > div{
+   display: flex;
+}
+.sub-payment .delivery .title label{
+   font-size: 10px;
+}
+.sub-payment .delivery .title input{
+   display: none;
+}
+.sub-payment .payment_cash .payment_tool{
+   display: flex;
+   justify-content: center;
+   border:1px solid #bfbfbf;
+   box-sizing: border-box;
+   margin-bottom: 40px;
+}
+.sub-payment .payment_cash .payment_tool li{
+   width: 25%;
+   height: 30px;
+   line-height: 30px;
+   text-align: center;
+   border-left:1px solid #8b8585;
+   box-sizing: border-box;
+   font-size: 12px;
+   font-weight: 500;
+}
+.sub-payment .payment_cash .payment_tool li a{
+   display: block;
+   width: 100%;
+   background: #fff;
+}
+.sub-payment .payment_cash .payment_tool .ui-tabs-active a{
+   background: #2F80ED;
+   color: #fff;
+}
+.sub-payment .payment_cash .payment_tool li:first-child{
+   border:none;
+}
+.sub-payment .payment_confirm{
+   margin-top: 10px;
+}
+.sub-payment button.primary_btn{
+   margin: 40px 0;
+}
+.sub-payment .payment_select{
+   width: 100%;
+   height: 40px;
+   border: 1px solid #bfbfbf;
+   margin-bottom: 20px;
+   box-sizing: border-box;
+   font-size:12px;
+   color: #6f6f6f;
+   padding: 0 10px;
+   -webkit-appearance: none; /* 네이티브 외형 감추기 */ 
+   -moz-appearance: none; 
+   background: url(../images/sellect_arrow.png) no-repeat 95% 50%/12px 7.5px;
+}
+#realtime, #paynow{
+   padding-bottom: 20px;
 }
