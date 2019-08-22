@@ -1278,5 +1278,27 @@ select::-ms-expand { display: none; }
    background: url(../images/sellect_arrow.png) no-repeat 95% 50%/12px 7.5px;
 }
 #realtime, #paynow{
-   padding-bottom: 20px;
+   padding-bottom: 10px;
+}
+#realtime h5{
+   font-size:12px;
+   font-weight: 500;
+   margin-bottom: 10px;
+}
+#realtime li{
+   font-size: 10px;
+   margin-bottom: 10px;
+}
+#realtime li::before{
+   content:'•';
+   margin-right: 5px;
+}
+#paynow h5{
+   font-size: 12px;
+   font-weight: 500;
+   margin-bottom: 10px;
+}
+#paynow p{
+   font-size: 10px;
+   margin-bottom: 10px;
 }
