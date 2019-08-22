@@ -188,7 +188,7 @@
          <div class="payment_maintitle">
             <h3>주문고객/배송지정보</h3>
          </div>
-         <form action="#" method="POST" class="container">
+         <form action="#" method="POST" class="container" id="payment_form">
             <div class="order">
                <h4>주문하시는 분</h4>
                <hr/>
@@ -234,7 +234,7 @@
                      <input type="text" id="payment_telephon" name="payment_telephon" placeholder="전화번호" class="my_form">
                   </p>
                   <p>
-                     <input type="text" id="payment_adress" name="payment_adress" placeholder="주소 (필수)" class="my_form" disabled>
+                     <input type="text" id="payment_adress" name="payment_adress" placeholder="주소 (필수)" class="my_form">
                      <a href="" class="post_btn">우편번호</a>
                   </p>
                   <p>
@@ -303,7 +303,7 @@
             </div> <!-- payment_cash -->
             <div class="payment_confirm">
                <p>
-                  <input type="checkbox" id="join_confirm" name="join_confirm">
+                  <input type="checkbox" id="payment_confirm_check" name="payment_confirm_check">
                   <span class="my_check_02"><i class="fas fa-check"></i></span>
                   <label for="join_confirm">구매자 동의</label>
                </p>

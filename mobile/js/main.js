@@ -105,7 +105,18 @@ $( function(){
       errorElement:'span'
    });//login_form validate
 
-   $('#email_select').change(function(){ $("#email_select option:selected").each(function () {
+   $('#payment_email_select').change(function(){ $("#payment_email_select option:selected").each(function () {
+      if($(this).val()== '1'){ 
+         //직접입력일 경우 
+         $("#payment_email_adress").val(''); //값 초기화
+         $("#payment_email_adress").attr("disabled",false); //활성화
+      }else{
+         $("#payment_email_adress").val($(this).text()); //선택값 입력
+         $("#payment_email_adress").attr("disabled",true); //비활성화
+         } 
+      }); 
+   });
+   $('#payment_email').change(function(){ $("#payment_email option:selected").each(function () {
       if($(this).val()== '1'){ 
          //직접입력일 경우 
          $("#join_Email_adress").val(''); //값 초기화
@@ -115,7 +126,7 @@ $( function(){
          $("#join_Email_adress").attr("disabled",true); //비활성화
          } 
       }); 
-   });
+   }); //이메일 직접입력
 
    $("#join_form").validate({
       rules:{
@@ -171,5 +182,55 @@ $( function(){
       }
    }); //join confirm
 
-   $( ".payment_cash" ).tabs();
+   $('.sub-payment button').click(function(){
+      if($('#payment_confirm_check').prop('checked') == false){
+         alert('구매자 약관에 동의하지 않았습니다.')
+      }
+   }); //payment confirm
+
+   $( ".payment_cash" ).tabs(); //payment tab
+
+   $("#payment_form").validate({
+      rules:{
+         payment_name_01:{
+            required:true
+         },
+         payment_phone_01:{
+            required:true,
+            number: true
+         },
+         payment_name_02:{
+            required:true
+         },
+         payment_phone_02:{
+            required:true,
+            number: true
+         },
+         payment_adress:{
+            required:true
+         }
+      },
+      messages:{
+         payment_name_01:{
+            required:'이름은 필수입니다.'
+         },
+         payment_phone_01:{
+            required:'휴대폰 번호는 필수입니다.',
+            number:'숫자만 입력할 수 있습니다.'
+         },
+         payment_name_02:{
+            required:'이름은 필수입니다.'
+         },
+         payment_phone_02:{
+            required:'휴대폰 번호는 필수입니다.',
+            number:'숫자만 입력할 수 있습니다.'
+         },
+         payment_adress:{
+            required:'주소는 필수입니다.'
+         }
+      },
+      errorClass: 'badlogin',
+      valideClass: 'goodlogin',
+      errorElement:'span'
+   });//join_form validate
 });

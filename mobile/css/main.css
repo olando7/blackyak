@@ -1241,7 +1241,7 @@ select::-ms-expand { display: none; }
    height: 30px;
    line-height: 30px;
    text-align: center;
-   border-left:1px solid #8b8585;
+   border-left:1px solid #bfbfbf;
    box-sizing: border-box;
    font-size: 12px;
    font-weight: 500;
@@ -1301,4 +1301,22 @@ select::-ms-expand { display: none; }
 #paynow p{
    font-size: 10px;
    margin-bottom: 10px;
+}
+.sub-payment form p{
+   position: relative;
+}
+.sub-payment form input.badlogin{
+   border: 1px solid #FF0000;
+   box-shadow: inset 0px 0px 10px rgba(255, 0, 0, 0.25);
+   color:#ff0000;
+}
+.sub-payment form input.badlogin::placeholder{
+   visibility: hidden;
+}
+.sub-payment span.badlogin{
+   color:#ff0000;
+   font-size: 10px;
+   font-weight: 300;
+   position: absolute;
+   left: 0; bottom: 100%;
 }
