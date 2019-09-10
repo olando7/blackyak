@@ -29,7 +29,8 @@ $( function(){
 
    $('.banner_slider').bxSlider({
       controls:false,
-      auto:true
+      auto:true,
+      autoHover: true
    }); //banner
 
    $('.best_list').bxSlider({
@@ -41,7 +42,8 @@ $( function(){
       maxSlides:5,
       moveSlides:1,
       shrinkItems:true,
-      touchEnabled:false
+      touchEnabled:false,
+      autoHover: true
    }); //best
 
    $('.list_checked').click(function(){
